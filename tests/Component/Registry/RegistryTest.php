@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) Jyxon, Inc. All rights reserved.
+ * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
  */
 namespace Ulrack\Configuration\Tests\Component\Registry;
@@ -30,7 +30,7 @@ class RegistryTest extends TestCase
 
         $this->assertEquals([], $subject->toArray());
         $this->assertEquals([], $subject->get('foo'));
-        
+
         $subject->register('foo', 'bar');
         $subject->register('foo', 'baz');
 

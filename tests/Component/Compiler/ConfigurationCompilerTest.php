@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) Jyxon, Inc. All rights reserved.
+ * Copyright (C) GrizzIT, Inc. All rights reserved.
  * See LICENSE for license details.
  */
 namespace Ulrack\Configuration\Tests\Component\Compiler;
@@ -31,7 +31,7 @@ class ConfigurationCompilerTest extends TestCase
     {
         $driver = $this->createMock(FileSystemDriverInterface::class);
         $subject = new ConfigurationCompiler($driver);
-        
+
         PackageLocator::registerLocation(__DIR__);
 
         $this->assertInstanceOf(ConfigurationCompiler::class, $subject);
@@ -76,7 +76,7 @@ class ConfigurationCompilerTest extends TestCase
             ->method('get')
             ->with('configuration/foo.json')
             ->willReturn('{"foo": "bar"}');
-        
+
         $validator = $this->createMock(ValidatorInterface::class);
 
         $validator->expects(static::once())
