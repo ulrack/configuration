@@ -1,3 +1,5 @@
+# DEPRECATION NOTICE: this package has been moved and improved at [grizz-it/configuration](https://github.com/grizz-it/configuration)
+
 [![Build Status](https://travis-ci.com/ulrack/configuration.svg?branch=master)](https://travis-ci.com/ulrack/configuration)
 
 # Ulrack Configuration
